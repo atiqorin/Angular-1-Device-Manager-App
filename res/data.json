@@ -1,0 +1,79 @@
+{
+
+  "data":[
+    {
+      "id": 0,
+      "status": "25%",
+      "serialNumber": 7654321,
+      "macAddress": "A23:832:B2:48:acd",
+      "lastHeartBeat": "1 min",
+      "model": "SLNK_8440",
+      "configBased": "Custom"
+    },
+    {
+      "id": 1,
+      "status": "25%",
+      "serialNumber": 1234567,
+      "macAddress": "JDS:32:BE:2786:E",
+      "lastHeartBeat": "2 min",
+      "model": "SLNK_8440",
+      "configBased": "Enterprise"
+    },
+    {
+      "id": 2,
+      "status": "25%",
+      "serialNumber": 3333333,
+      "macAddress": "ert:F4589:bc:7Ef",
+      "lastHeartBeat": "1 min",
+      "model": "SLNK_8RTWB",
+      "configBased": "Group"
+    },
+    {
+      "id": 3,
+      "status": "18%",
+      "serialNumber": 2424247,
+      "macAddress": "J2EE:#jdk:Love:Java",
+      "lastHeartBeat": "1 min",
+      "model": "SLNK_8RTWB",
+      "configBased": "Custom"
+    },
+    {
+      "id": 4,
+      "status": "34%",
+      "serialNumber": 3072748,
+      "macAddress": "And:Roid4:All:#27",
+      "lastHeartBeat": "2 min",
+      "model": "SLNK_2732",
+      "configBased": "Group"
+    },
+    {
+      "id": 5,
+      "status": "2%",
+      "serialNumber": 7376297,
+      "macAddress": "A24:732:B2:48:aye",
+      "lastHeartBeat": "1 min",
+      "model": "SLNK_3DGS",
+      "configBased": "Enterprise"
+    },
+    {
+      "id": 6,
+      "status": "12%",
+      "serialNumber": 4388732,
+      "macAddress": "A23:832:B2:48:acd",
+      "lastHeartBeat": "1 min",
+      "model": "SLNK_MAS2",
+      "configBased": "Group"
+    },
+    {
+      "id": 7,
+      "status": "87%",
+      "serialNumber": 7310923,
+      "macAddress": "A23:832:B2:48:acd",
+      "lastHeartBeat": "1 min",
+      "model": "SLNK_2732",
+      "configBased": "Group"
+    }
+
+
+    ]
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Area</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/basic.css">
+</head>
+<body ng-app="splApp">
+
+<div class="container-fluid">
+    <div class="top-blue-bar">&nbsp</div>
+
+
+    <div class="col-lg-1 custom-nav-bar ">
+
+        <nav ng-controller="navctrl">
+
+            <div class="nav-decorations " ng-repeat="icon in icons">
+                <i class="fa {{icon}} center-item"></i>
+            </div>
+        </nav>
+
+    </div>
+    <!--right side container-->
+    <div class="col-lg-11 col-lg-offset-1">
+        <nav class="navbar navbar-default title-shadow">
+            <div class="container-fluid">
+                <div class="navbar-header ">
+                    <a class="navbar-brand" href="#">
+                        <img src="res/device_manager.png" alt="Logo" height="50px" style="margin-left: 30px;">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="right-container" ng-controller="dataController" >
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Configuration</a></li>
+                <li class="active">Device Security</li>
+            </ol>
+            <div><i class="fa fa-gear fa-2x" style="color:lightsteelblue;"> Configuration</i></div>
+            <br>
+
+            <br>
+            <table class="table">
+                <caption>
+                    <div id="">Search:
+                        <select ng-model="test" >
+                            <option value="$" >None</option>
+                            <option value="status" >Status</option>
+                            <option value="serialNumber">Serial Number</option>
+                            <option value="macAddress">Mac Address</option>
+                            <option value="lastHeartBeat">Last HeartBeat</option>
+                            <option value="Model">Model</option>
+                            <option value="configBased">Config based</option>
+
+                        </select>
+                        &nbsp;&nbsp;
+                        <input type="text" placeholder="Search.."  ng-model="searchItem[test]" ng-show="test"/></div>
+                </caption>
+                <thead>
+                <tr>
+                    <th><input type="checkbox" class="checkbox"></th>
+                    <th>Status</th>
+                    <th>Serial Number</th>
+                    <th>Mac Address</th>
+                    <th>Last HeartBeat</th>
+                    <th>Model</th>
+                    <th>Config based</th>
+                    <th>Actions</th>
+
+                </tr>
+                </thead>
+
+                <tbody  >
+                <tr ng-repeat="dataItem in data|filter:searchItem"  >
+                    <td><input type="checkbox" class="checkbox"></td>
+                    <td >{{dataItem.status}}</td>
+                    <td>{{dataItem.serialNumber}}</td>
+                    <td>{{dataItem.macAddress}}</td>
+                    <td>{{dataItem.lastHeartBeat}}</td>
+                    <td>{{dataItem.model}}</td>
+                    <td>{{dataItem.configBased}}</td>
+                </tr>
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<script src="node_modules/angular/angular.js"></script>
+<script src="script/app.js"></script>
+<script src="script/nav.ctr.js"></script>
+<script src="script/data.ctr.js"></script>
+<script src="script/data.fac.js"></script>
+</body>
+</html>

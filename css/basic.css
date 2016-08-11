@@ -1,0 +1,114 @@
+body{
+    background-color: #ffffff;
+}
+
+.top-blue-bar {
+    background-color: cornflowerblue;
+    width: 100%;
+}
+.col-lg-1{
+    background-color: ghostwhite;
+    min-height: 900px;
+
+}
+.col-lg-11{
+    padding:0px;
+}
+.right-container{
+    margin-left: 10px;
+}
+#service-block{
+
+    line-height: 1.2em;
+    vertical-align: middle;
+}
+.breadcrumb{
+    background-color: #ffffff;
+}
+.container-fluid {
+    width: 100% !important;
+    padding: 0;
+
+}
+
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+
+.custom-nav-bar {
+    background-color: ghostwhite;
+    position: absolute;
+    z-index: 200;
+    -webkit-box-shadow: 11px -8px 7px -9px rgba(189, 172, 189, 1);
+    -moz-box-shadow: 11px -8px 7px -9px rgba(189, 172, 189, 1);
+    box-shadow: 11px -8px 7px -9px rgba(189, 172, 189, 1);
+    margin-right: 5px;
+    padding: 0px;
+    align-items: center;
+    height: 100% !important;
+
+
+}
+
+
+.nav-decorations {
+    background-color: #ffffff;
+    line-height: 40px;
+    border-bottom: solid 1px gainsboro;
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.nav-decorations:hover {
+    border-bottom: solid 1px gold;
+    background-color: cornflowerblue;
+}
+
+.nav-decorations:first-child {
+    margin-top: 100px !important;
+
+}
+
+.nav-decorations:active {
+    background-color: dimgray;
+    color: yellow;
+
+}
+.title-shadow{
+    z-index:201;
+    height:80px;
+    background-color:#EAE5E5;
+    -webkit-box-shadow: -1px 5px 4px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 5px 4px -4px rgba(0,0,0,0.75);
+    box-shadow: -1px 5px 4px -4px rgba(0,0,0,0.75);
+
+}
+.nav-decorations:last-child {
+    line-height: 40px;
+    border-bottom: none !important;
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.nav-decorations:last-child:hover {
+    background-color: cornflowerblue;
+}
+.navbar .navbar-default{
+   padding: 0px !important;
+}
+.center-item {
+    text-align: center !important;
+    font-size: 20px;
+}
+
+.center-item:hover {
+
+    color: white;
+}
+
+.center-item:active {
+    color: yellow;
+}
